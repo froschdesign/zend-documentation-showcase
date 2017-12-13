@@ -102,7 +102,7 @@ pre[class*="language-"] {
   cursor: help; }
 
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8250,6 +8250,9 @@ button.close {
 body {
   margin-top: 90px; }
 
+h2 {
+  word-break: break-all; }
+
 img {
   max-width: 100%; }
 
@@ -8393,9 +8396,20 @@ pre[class*="language-"] {
   .footer a:hover {
     color: #68b604; }
 
+.header {
+  background-color: #68b604;
+  margin-bottom: 40px;
+  padding: 10px 0; }
+  .header h1 {
+    font-weight: 300;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8); }
+
 .navbar {
   border-top: 3px solid #4b8403;
   /*box-shadow : 0 0 9px 0 rgba(0, 0, 0, .3);*/ }
+  .navbar a:focus {
+    outline: 0; }
 
 .page-nav {
   list-style-type: none;
