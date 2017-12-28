@@ -101,8 +101,44 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help; }
 
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber; }
+
+pre.line-numbers > code {
+  position: relative;
+  white-space: inherit; }
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber; }
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right; }
+
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -4157,10 +4193,10 @@ tbody.collapse.in {
       color: #444; }
 
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 0 0;
   margin-bottom: 26px;
   list-style: none;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-radius: 0; }
   .breadcrumb > li {
     display: inline-block; }
@@ -5272,7 +5308,7 @@ button.close {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 60em;
     margin: 30px auto; }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -8267,12 +8303,16 @@ pre[class*="language-"] {
   font-size: 13px;
   border-radius: 0;
   border: none;
-  /*border-top       : 3px solid #ccc;
-    border-bottom    : 3px solid #ccc;*/
   border-left: 5px solid #ccc;
   background-color: #3c4146;
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #545454; }
+  .line-numbers .line-numbers-rows > span:before {
+    color: #646464;
+    text-shadow: none; }
 
 .anchorjs-link:hover {
   text-decoration: none; }
@@ -8332,22 +8372,29 @@ pre[class*="language-"] {
     margin: 0;
     font-size: 0.9em; }
 
-.content__title {
-  color: #595959;
-  font-size: 52px;
-  border-bottom: 1px solid #efefef;
-  margin-bottom: 25px;
-  margin-top: 10px;
-  padding-bottom: 5px; }
+.breadcrumb {
+  color: #9d9d9d;
+  order: -3; }
 
-.content h2 {
-  border-top: 1px solid #efefef;
-  padding-top: 15px;
-  margin-top: 50px;
-  margin-bottom: 30px; }
-
-.content > h3 {
-  font-weight: 400; }
+.content {
+  display: flex;
+  flex-direction: column; }
+  .content__title,
+  .content h1:first-of-type {
+    order: -2;
+    color: #595959;
+    font-size: 52px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding-bottom: 5px; }
+  .content h2 {
+    border-top: 1px solid #efefef;
+    padding-top: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px; }
+  .content > h3 {
+    font-weight: 400; }
 
 .dropdown-submenu {
   position: relative; }
@@ -8396,20 +8443,14 @@ pre[class*="language-"] {
   .footer a:hover {
     color: #68b604; }
 
-.header {
-  background-color: #68b604;
-  margin-bottom: 40px;
-  padding: 10px 0; }
-  .header h1 {
-    font-weight: 300;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.8); }
-
 .navbar {
   border-top: 3px solid #4b8403;
   /*box-shadow : 0 0 9px 0 rgba(0, 0, 0, .3);*/ }
   .navbar a:focus {
     outline: 0; }
+  .navbar-brand a:hover {
+    text-decoration: none;
+    color: white; }
 
 .page-nav {
   list-style-type: none;
@@ -8440,8 +8481,11 @@ pre[class*="language-"] {
   font-size: 13px; }
   .subnavigation__title {
     padding-bottom: 2px;
-    margin: 0 10px 15px;
-    color: #95989a; }
+    margin: 0 10px 15px; }
+    .subnavigation__title a:link, .subnavigation__title a:visited {
+      color: #95989a; }
+    .subnavigation__title a:hover {
+      color: #68b604; }
   .subnavigation__list {
     padding-left: 0;
     list-style-type: none; }
@@ -8494,7 +8538,9 @@ pre[class*="language-"] {
 
 .toc {
   margin-left: 15px;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 40px;
+  order: -1; }
   .toc__headline {
     color: #95989a;
     margin: 0 0 10px;
