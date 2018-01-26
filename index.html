@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,420 +15,92 @@
 </head>
 <body id="page-top">
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Navigation -->
+    <div class="navbar navbar-default" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
-            
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            
+
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
             <!-- Main title -->
             <span class="navbar-brand">
-                <a class="logo-link" href="https://framework.zend.com/" data-toggle="tooltip" data-placement="bottom" title="Go to the ZF homepage">
-                    <img src="./img/zf-logo-mark.svg" height="28" alt="Zend Framework" />
+                <a class="logo-link" href="https://framework.zend.com/" data-tooltip data-placement="bottom" title="Go to the ZF homepage">
+                    <img src="./img/zend-framework-logo.svg" height="28" alt="Zend Framework">
                 </a>
-                <a href=".">zend-validator</a>
             </span>
         </div>
 
-        <!-- Expanded navigation -->
+        <!-- Main navigation -->
         <div class="navbar-collapse collapse">
-            
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    
-                        
-                            <li class="active">
-                                <a href=".">Home</a>
-                            </li>
-                        
-                    
-                        
-                            <li>
-                                <a href="intro/">Intro</a>
-                            </li>
-                        
-                    
-                        
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Reference <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    
-                                        
-    <li>
-        <a href="validator-chains/">Validator Chains</a>
-    </li>
-
-                                    
-                                        
-    <li>
-        <a href="writing-validators/">Writing Validators</a>
-    </li>
-
-                                    
-                                        
-    <li>
-        <a href="messages/">Validation Messages</a>
-    </li>
-
-                                    
-                                        
-    <li>
-        <a href="set/">Standard Validation Classes</a>
-    </li>
-
-                                    
-                                        
-    <li class="dropdown-submenu">
-        <a tabindex="-1" href="#">Validators</a>
-        <ul class="dropdown-menu">
-            
-            
-    <li>
-        <a href="validators/barcode/">Barcode</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/between/">Between</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/callback/">Callback</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/credit-card/">CreditCard</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/date/">Date</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/db/">Db\RecordExists and Db\NoRecordExists</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/digits/">Digits</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/email-address/">EmailAddress</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/greater-than/">GreaterThan</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/hex/">Hex</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/hostname/">Hostname</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/iban/">Iban</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/identical/">Identical</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/in-array/">InArray</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/ip/">Ip</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/isbn/">Isbn</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/is-countable/">IsCountable</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/isinstanceof/">IsInstanceOf</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/less-than/">LessThan</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/not-empty/">NotEmpty</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/regex/">Regex</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/sitemap/">Sitemap</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/step/">Step</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/string-length/">StringLength</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/timezone/">Timezone</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/uri/">Uri</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/uuid/">Uuid</a>
-    </li>
-
-            
-        </ul>
-    </li>
-
-                                    
-                                        
-    <li class="dropdown-submenu">
-        <a tabindex="-1" href="#">File Validators</a>
-        <ul class="dropdown-menu">
-            
-            
-    <li>
-        <a href="validators/file/intro/">Intro</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/count/">Count</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/crc32/">Crc32</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/exclude-extension/">ExcludeExtension</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/exclude-mime-type/">ExcludeMimeType</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/exists/">Exists</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/extension/">Extension</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/files-size/">FilesSize</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/hash/">Hash</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/image-size/">ImageSize</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/is-compressed/">IsCompressed</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/is-image/">IsImage</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/md5/">Md5</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/mime-type/">MimeType</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/not-exists/">NotExists</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/sha1/">Sha1</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/size/">Size</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/upload/">Upload</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/upload-file/">UploadFile</a>
-    </li>
-
-            
-            
-    <li>
-        <a href="validators/file/word-count/">WordCount</a>
-    </li>
-
-            
-        </ul>
-    </li>
-
-                                    
-                                </ul>
-                            </li>
-                        
-                    
-                </ul>
-            
-
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#" class="component-toggle" data-toggle="tooltip" data-placement="bottom" title="Show component list">
-                        <i class="fa fa-book"></i> Components
-                    </a>
+                    <a href="https://framework.zend.com/about">About</a>
                 </li>
-
                 <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
+                    <a href="https://framework.zend.com/downloads">Install</a>
                 </li>
-
-                
-                    <li>
-                        <a href="https://github.com/zendframework/zend-validator/">
-                            
-                                <i class="fa fa-github"></i>
-                            
-                            GitHub
-                        </a>
-                    </li>
-                
+                <li class="active">
+                    <a href="https://docs.zendframework.com">Documentation</a>
+                </li>
+                <li>
+                    <a href="http://www.zend.com/en/services/certification">Get Certified</a>
+                </li>
+                <li>
+                    <a href="https://framework.zend.com/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="https://framework.zend.com/participate">Participate</a>
+                </li>
             </ul>
         </div>
     </div>
 </div>
 
-    <!-- content:begin -->
+    <!-- Header -->
+    <header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="header__title">
+                    Documentation
+
+                    
+                        <small class="header__subtitle">zend-validator</small>
+                    
+                </h1>
+            </div>
+            <div class="col-md-3">
+                
+                    <a href="#" class="header__link header__link--search" data-toggle="modal" data-tooltip="" data-placement="bottom" data-target="#mkdocs_search_modal" title="Open search">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                    <a href="https://docs.zendframework.com" class="header__link" data-tooltip data-placement="bottom" title="Show component list">
+                        <i class="fa fa-book"></i> Components
+                    </a>
+                    <a href="https://github.com/zendframework/zend-validator/" class="header__link header__link--github" data-tooltip data-placement="bottom" title="Go to repository of zend-validator">
+                        <i class="fa fa-github"></i> GitHub
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Content -->
     <div class="container">
         <div class="row">
             <div class="col-md-9 content" role="main">
                 
                     <ol class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
+  <li><a href="https://docs.zendframework.com/">Docs</a></li>
   <li><a href=".">zend-validator</a></li>
   
     
@@ -451,7 +125,7 @@
 <ul>
     <li>Issues: <a href="https://github.com/zendframework/zend-validator/issues/">github.com/zendframework/zend-validator/issues</a></li>
     <li>Source: <a href="https://github.com/zendframework/zend-validator/">github.com/zendframework/zend-validator</a></li>
-    <li>Chat: <a href="https://zendframework-slack.herokuapp.co">zendframework-slack.herokuapp.co</a></li>
+    <li>Chat: <a href="https://zendframework-slack.herokuapp.com">zendframework-slack.herokuapp.com</a></li>
     <li>Forum: <a href="https://discourse.zendframework.com/">discourse.zendframework.com</a></li>
 </ul>
 
@@ -474,7 +148,9 @@
 
                 
             </div>
-            <div class="col-md-3 sidebar"><div class="subnavigation hidden-print">
+            <div class="col-md-3 sidebar">
+                
+                    <div class="subnavigation hidden-print">
     <h4 class="subnavigation__title">
         <a href=".">zend-validator</a>
     </h4>
@@ -821,12 +497,13 @@
             
         
     </ul>
-    
-</div></div>
+</div>
+                
+            </div>
         </div>
     </div>
-    <!-- content:end -->
 
+    <!-- Footer -->
     <footer class="footer">
     <div class="container">
         <div class="row">
@@ -865,6 +542,12 @@
     </div>
 </footer>
 
+    <script>var base_url = '.';</script>
+    <script src="./js/scripts.js"></script>
+        <script src="./search/require.js"></script>
+        <script src="./search/search.js"></script>
+
+    <!-- Search modal -->
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -892,32 +575,14 @@
         </div>
     </div>
 
-    <div class="zf-components">
-    <div class="zf-components-grid">
-        <div class="zf-logo">
-            <a href="https://framework.zend.com" data-toggle="tooltip" data-placement="bottom" title="Go to the ZF homepage">
-                <img src="./img/zf-logo-mark.svg" alt="Zend Framework" width="250"/>
-            </a>
-        </div>
-
-        <div class="component-list"></div>
-
-        <p class="zf-components-rollup"><a href="#">Hide list</a></p>
-    </div>
-</div>
-
-    <script>var base_url = '.';</script>
-    <script src="./js/scripts.js"></script>
-        <script src="./search/require.js"></script>
-        <script src="./search/search.js"></script>
-
 
 
 </body>
+
 
 </html>
 
 <!--
 MkDocs version : 0.17.2
-Build Date UTC : 2017-12-28 11:53:13
+Build Date UTC : 2018-01-26 19:04:13
 -->
