@@ -8763,6 +8763,10 @@ pre[class*="language-"] {
       .header__link--components, .header__link--github {
         display: none; } }
 
+.help-wanted {
+  color: #777777;
+  font-size: 13px; }
+
 .navbar {
   border: none; }
   .navbar a:focus {
@@ -8782,11 +8786,11 @@ pre[class*="language-"] {
 
 .page-nav {
   list-style-type: none;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   display: table;
   width: 100%;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 24px 6px; }
   @media (max-width: 480px) {
     .page-nav {
@@ -8805,9 +8809,15 @@ pre[class*="language-"] {
       text-decoration: none;
       color: #68b604; }
 
-@media (max-width: 480px) {
-  .sidebar {
-    display: none; } }
+.sidebar {
+  position: sticky;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 40px;
+  /*max-height: 80vh;*/ }
+  @media (max-width: 480px) {
+    .sidebar {
+      display: none; } }
 
 .subnavigation {
   font-size: 13px; }
