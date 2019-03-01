@@ -477,11 +477,11 @@ $cache      = Zend\Cache\StorageFactory::factory([
     ],
 ]);
 $translator-&gt;setCache($cache);</code></pre></p>
+<p>The explanation of creating a cache and and using different adapters for caching
+can be found in <a href="https://docs.zendframework.com/zend-cache/">documentation of zend-cache</a>.</p>
 <h2 id="disable-caching">Disable Caching</h2>
 <p>To disable the cache, pass a <code>null</code> value to the <code>setCache()</code> method.</p>
 <p> <pre class=codehilite><code class=language-php>$translator-&gt;setCache(null);</code></pre></p>
-<p>The explanation of creating a cache and and using different adapters for caching
-can be found in <a href="https://docs.zendframework.com/zend-cache/">documentation of zend-cache</a>.</p>
 <h2 id="clear-cache">Clear Cache</h2>
 <p>To clear the cache for a specific text domain and locale, use the <code>clearCache</code>
 method.</p>
