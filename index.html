@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="zend-validator provides a set of commonly needed validators. It also provides a simple validator chaining mechanism by which multiple validators may be applied to a single datum in a user-defined order.">  
+    <meta name="description" content="Provide translations for your application, and filter and validate internationalized values.">  
     <link rel="shortcut icon" href="./img/favicon.ico">
 
-    <title>Home - zend-validator</title>
+    <title>Home - zend-i18n</title>
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -66,7 +66,7 @@
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href=".">zend-validator</a>
+            <a href="">zend-i18n</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -75,342 +75,264 @@
             
                 
                     <li class="subnavigation__list-item ">
-                        <a href="intro/" class="subnavigation__link">Intro</a>
+                        <a href="introduction/" class="subnavigation__link">Introduction</a>
                     </li>
                 
             
                 
                     <li class="subnavigation__list-item">
-                        <span class="subnavigation__headline">Reference</span>
+                        <span class="subnavigation__headline">Translator</span>
                         <ul class="subnavigation__list">
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="validator-chains/" class="subnavigation__link">Validator Chains</a>
+        <a href="translator/basic-usage/" class="subnavigation__link">Basic Usage</a>
     </li>
 
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="writing-validators/" class="subnavigation__link">Writing Validators</a>
+        <a href="translator/plural-messages/" class="subnavigation__link">Plural Messages</a>
     </li>
 
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="messages/" class="subnavigation__link">Validation Messages</a>
+        <a href="translator/caching/" class="subnavigation__link">Caching</a>
     </li>
 
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="set/" class="subnavigation__link">Standard Validation Classes</a>
+        <a href="translator/events/" class="subnavigation__link">Events</a>
     </li>
 
                             
                                 
-    <li class="subnavigation__list-item">
-        <span class="subnavigation__headline">Validators</span>
-        <ul class="subnavigation__list">
-            
-                
     <li class="subnavigation__list-item ">
-        <a href="validators/barcode/" class="subnavigation__link">Barcode</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/between/" class="subnavigation__link">Between</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/callback/" class="subnavigation__link">Callback</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/credit-card/" class="subnavigation__link">CreditCard</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/date/" class="subnavigation__link">Date</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/db/" class="subnavigation__link">Db\RecordExists and Db\NoRecordExists</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/digits/" class="subnavigation__link">Digits</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/email-address/" class="subnavigation__link">EmailAddress</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/explode/" class="subnavigation__link">Explode</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/greater-than/" class="subnavigation__link">GreaterThan</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/hex/" class="subnavigation__link">Hex</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/hostname/" class="subnavigation__link">Hostname</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/iban/" class="subnavigation__link">Iban</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/identical/" class="subnavigation__link">Identical</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/in-array/" class="subnavigation__link">InArray</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/ip/" class="subnavigation__link">Ip</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/isbn/" class="subnavigation__link">Isbn</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/is-countable/" class="subnavigation__link">IsCountable</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/isinstanceof/" class="subnavigation__link">IsInstanceOf</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/less-than/" class="subnavigation__link">LessThan</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/not-empty/" class="subnavigation__link">NotEmpty</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/regex/" class="subnavigation__link">Regex</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/sitemap/" class="subnavigation__link">Sitemap</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/step/" class="subnavigation__link">Step</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/string-length/" class="subnavigation__link">StringLength</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/timezone/" class="subnavigation__link">Timezone</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/uri/" class="subnavigation__link">Uri</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/uuid/" class="subnavigation__link">Uuid</a>
-    </li>
-
-            
-        </ul>
+        <a href="translator/factory/" class="subnavigation__link">Factory</a>
     </li>
 
                             
                                 
-    <li class="subnavigation__list-item">
-        <span class="subnavigation__headline">File Validators</span>
-        <ul class="subnavigation__list">
-            
-                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/intro/" class="subnavigation__link">Intro</a>
+        <a href="translator/format-examples/" class="subnavigation__link">Format Examples</a>
     </li>
 
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Filters</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/count/" class="subnavigation__link">Count</a>
+        <a href="filters/introduction/" class="subnavigation__link">Introduction</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/alnum/" class="subnavigation__link">Alnum</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/alpha/" class="subnavigation__link">Alpha</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/number-format/" class="subnavigation__link">NumberFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/number-parse/" class="subnavigation__link">NumberParse</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Validators</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/crc32/" class="subnavigation__link">Crc32</a>
+        <a href="validators/introduction/" class="subnavigation__link">Introduction</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/alnum/" class="subnavigation__link">Alnum</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/alpha/" class="subnavigation__link">Alpha</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/date-time/" class="subnavigation__link">DateTime</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/is-float/" class="subnavigation__link">IsFloat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/is-int/" class="subnavigation__link">IsInt</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/phone-number/" class="subnavigation__link">PhoneNumber</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/post-code/" class="subnavigation__link">PostCode</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">View Helpers</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/exclude-extension/" class="subnavigation__link">ExcludeExtension</a>
+        <a href="view-helpers/introduction/" class="subnavigation__link">Introduction</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/currency-format/" class="subnavigation__link">CurrencyFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/date-format/" class="subnavigation__link">DateFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/number-format/" class="subnavigation__link">NumberFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/plural/" class="subnavigation__link">Plural</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/translate/" class="subnavigation__link">Translate</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/translate-plural/" class="subnavigation__link">TranslatePlural</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Application Integration</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/exclude-mime-type/" class="subnavigation__link">ExcludeMimeType</a>
+        <a href="application-integration/zend-expressive/" class="subnavigation__link">Usage in a zend-expressive Application</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="application-integration/zend-mvc/" class="subnavigation__link">Usage in a zend-mvc Application</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="application-integration/slim/" class="subnavigation__link">Usage in a Slim Application</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="application-integration/stand-alone/" class="subnavigation__link">Stand-Alone</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Cookbook</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/exists/" class="subnavigation__link">Exists</a>
+        <a href="cookbook/how-to-set-a-global-locale/" class="subnavigation__link">How to set a global Locale?</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="cookbook/extracting-translatable-string-with-gettext/" class="subnavigation__link">Extracting translatable strings with Gettext</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Migrating</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/extension/" class="subnavigation__link">Extension</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/files-size/" class="subnavigation__link">FilesSize</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/hash/" class="subnavigation__link">Hash</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/image-size/" class="subnavigation__link">ImageSize</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/is-compressed/" class="subnavigation__link">IsCompressed</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/is-image/" class="subnavigation__link">IsImage</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/md5/" class="subnavigation__link">Md5</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/mime-type/" class="subnavigation__link">MimeType</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/not-exists/" class="subnavigation__link">NotExists</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/sha1/" class="subnavigation__link">Sha1</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/size/" class="subnavigation__link">Size</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/upload/" class="subnavigation__link">Upload</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/upload-file/" class="subnavigation__link">UploadFile</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/word-count/" class="subnavigation__link">WordCount</a>
-    </li>
-
-            
-        </ul>
+        <a href="migration/migration-to-v2.4/" class="subnavigation__link">Migration to v2.4</a>
     </li>
 
                             
@@ -450,7 +372,7 @@
                     Documentation
 
                     
-                        <small class="header__subtitle">zend-validator</small>
+                        <small class="header__subtitle">zend-i18n</small>
                     
                 </h1>
             </div>
@@ -461,7 +383,7 @@
                     <a href="#" class="header__link header__link--search" data-toggle="modal" data-target="#mkdocs_search_modal" title="Open search">
                         <i class="fa fa-search"></i> Search
                     </a>
-                    <a href="https://github.com/zendframework/zend-validator/" class="header__link header__link--github" title="Go to repository of zend-validator">
+                    <a href="https://github.com/zendframework/zend-i18n/" class="header__link header__link--github" title="Go to repository of zend-i18n">
                         <i class="fa fa-github"></i> GitHub
                     </a>
                 
@@ -477,29 +399,31 @@
             <!-- content:begin -->
                 
                     <ol class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
-  <li><a href="https://framework.zend.com/">Home</a></li>
-  <li><a href="https://docs.zendframework.com/">Docs</a></li>
-  <li><a href=".">zend-validator</a></li>
-  
+    <li><a href="https://framework.zend.com/">Home</a></li>
+
     
-  
-  <li class="active">Home</li>
+        <li><a href="https://docs.zendframework.com/">Documentation</a></li>
+
+        
+            <li>zend-i18n</li>
+        
+    
 </ol>
 
 
-    <h1>zend-validator</h1>
-<p>zend-validator provides a set of commonly needed validators. It also provides a simple validator chaining mechanism by which multiple validators may be applied to a single datum in a user-defined order.</p>
+    <h1>zend-i18n</h1>
+<p>Provide translations for your application, and filter and validate internationalized values.</p>
 
 
     <h2>Installation</h2>
     <h3>Using Composer</h3>
-    <pre><code class="language-bash">$ composer require zendframework/zend-validator</code></pre>
+    <pre><code class="language-bash">$ composer require zendframework/zend-i18n</code></pre>
 
 
 <h2>Support</h2>
 <ul>
-    <li>Issues: <a href="https://github.com/zendframework/zend-validator/issues/">github.com/zendframework/zend-validator/issues</a></li>
-    <li>Source: <a href="https://github.com/zendframework/zend-validator/">github.com/zendframework/zend-validator</a></li>
+    <li>Issues: <a href="https://github.com/zendframework/zend-i18n/issues/">github.com/zendframework/zend-i18n/issues</a></li>
+    <li>Source: <a href="https://github.com/zendframework/zend-i18n/">github.com/zendframework/zend-i18n</a></li>
     <li>Chat: <a href="https://zendframework-slack.herokuapp.com">zendframework-slack.herokuapp.com</a></li>
     <li>Forum: <a href="https://discourse.zendframework.com/">discourse.zendframework.com</a></li>
 </ul>
@@ -517,7 +441,7 @@
         
         <li class="page-nav__item">
             
-                <a rel="next" class="page-nav__link page-nav__link--next" href="intro/">
+                <a rel="next" class="page-nav__link page-nav__link--next" href="introduction/">
                     Next <i class="fa fa-chevron-right"></i>
                 </a>
             
@@ -526,14 +450,7 @@
 </nav>
 
 
-<div class="help-wanted">
-    <p>
-        Found a mistake or want to contribute to the documentation?
-        <a href="https://github.com/zendframework/zend-validator/edit/master/doc/book/index.md" target="_blank" class="help-wanted__link">
-            Edit this page on GitHub!
-        </a>
-    </p>
-</div>
+
                 
             <!-- content:end -->
             </div>
@@ -550,7 +467,7 @@
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href=".">zend-validator</a>
+            <a href="">zend-i18n</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -559,342 +476,264 @@
             
                 
                     <li class="subnavigation__list-item ">
-                        <a href="intro/" class="subnavigation__link">Intro</a>
+                        <a href="introduction/" class="subnavigation__link">Introduction</a>
                     </li>
                 
             
                 
                     <li class="subnavigation__list-item">
-                        <span class="subnavigation__headline">Reference</span>
+                        <span class="subnavigation__headline">Translator</span>
                         <ul class="subnavigation__list">
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="validator-chains/" class="subnavigation__link">Validator Chains</a>
+        <a href="translator/basic-usage/" class="subnavigation__link">Basic Usage</a>
     </li>
 
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="writing-validators/" class="subnavigation__link">Writing Validators</a>
+        <a href="translator/plural-messages/" class="subnavigation__link">Plural Messages</a>
     </li>
 
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="messages/" class="subnavigation__link">Validation Messages</a>
+        <a href="translator/caching/" class="subnavigation__link">Caching</a>
     </li>
 
                             
                                 
     <li class="subnavigation__list-item ">
-        <a href="set/" class="subnavigation__link">Standard Validation Classes</a>
+        <a href="translator/events/" class="subnavigation__link">Events</a>
     </li>
 
                             
                                 
-    <li class="subnavigation__list-item">
-        <span class="subnavigation__headline">Validators</span>
-        <ul class="subnavigation__list">
-            
-                
     <li class="subnavigation__list-item ">
-        <a href="validators/barcode/" class="subnavigation__link">Barcode</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/between/" class="subnavigation__link">Between</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/callback/" class="subnavigation__link">Callback</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/credit-card/" class="subnavigation__link">CreditCard</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/date/" class="subnavigation__link">Date</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/db/" class="subnavigation__link">Db\RecordExists and Db\NoRecordExists</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/digits/" class="subnavigation__link">Digits</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/email-address/" class="subnavigation__link">EmailAddress</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/explode/" class="subnavigation__link">Explode</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/greater-than/" class="subnavigation__link">GreaterThan</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/hex/" class="subnavigation__link">Hex</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/hostname/" class="subnavigation__link">Hostname</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/iban/" class="subnavigation__link">Iban</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/identical/" class="subnavigation__link">Identical</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/in-array/" class="subnavigation__link">InArray</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/ip/" class="subnavigation__link">Ip</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/isbn/" class="subnavigation__link">Isbn</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/is-countable/" class="subnavigation__link">IsCountable</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/isinstanceof/" class="subnavigation__link">IsInstanceOf</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/less-than/" class="subnavigation__link">LessThan</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/not-empty/" class="subnavigation__link">NotEmpty</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/regex/" class="subnavigation__link">Regex</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/sitemap/" class="subnavigation__link">Sitemap</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/step/" class="subnavigation__link">Step</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/string-length/" class="subnavigation__link">StringLength</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/timezone/" class="subnavigation__link">Timezone</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/uri/" class="subnavigation__link">Uri</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/uuid/" class="subnavigation__link">Uuid</a>
-    </li>
-
-            
-        </ul>
+        <a href="translator/factory/" class="subnavigation__link">Factory</a>
     </li>
 
                             
                                 
-    <li class="subnavigation__list-item">
-        <span class="subnavigation__headline">File Validators</span>
-        <ul class="subnavigation__list">
-            
-                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/intro/" class="subnavigation__link">Intro</a>
+        <a href="translator/format-examples/" class="subnavigation__link">Format Examples</a>
     </li>
 
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Filters</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/count/" class="subnavigation__link">Count</a>
+        <a href="filters/introduction/" class="subnavigation__link">Introduction</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/alnum/" class="subnavigation__link">Alnum</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/alpha/" class="subnavigation__link">Alpha</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/number-format/" class="subnavigation__link">NumberFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="filters/number-parse/" class="subnavigation__link">NumberParse</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Validators</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/crc32/" class="subnavigation__link">Crc32</a>
+        <a href="validators/introduction/" class="subnavigation__link">Introduction</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/alnum/" class="subnavigation__link">Alnum</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/alpha/" class="subnavigation__link">Alpha</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/date-time/" class="subnavigation__link">DateTime</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/is-float/" class="subnavigation__link">IsFloat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/is-int/" class="subnavigation__link">IsInt</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/phone-number/" class="subnavigation__link">PhoneNumber</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="validators/post-code/" class="subnavigation__link">PostCode</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">View Helpers</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/exclude-extension/" class="subnavigation__link">ExcludeExtension</a>
+        <a href="view-helpers/introduction/" class="subnavigation__link">Introduction</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/currency-format/" class="subnavigation__link">CurrencyFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/date-format/" class="subnavigation__link">DateFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/number-format/" class="subnavigation__link">NumberFormat</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/plural/" class="subnavigation__link">Plural</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/translate/" class="subnavigation__link">Translate</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="view-helpers/translate-plural/" class="subnavigation__link">TranslatePlural</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Application Integration</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/exclude-mime-type/" class="subnavigation__link">ExcludeMimeType</a>
+        <a href="application-integration/zend-expressive/" class="subnavigation__link">Usage in a zend-expressive Application</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="application-integration/zend-mvc/" class="subnavigation__link">Usage in a zend-mvc Application</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="application-integration/slim/" class="subnavigation__link">Usage in a Slim Application</a>
+    </li>
+
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="application-integration/stand-alone/" class="subnavigation__link">Stand-Alone</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Cookbook</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/exists/" class="subnavigation__link">Exists</a>
+        <a href="cookbook/how-to-set-a-global-locale/" class="subnavigation__link">How to set a global Locale?</a>
     </li>
 
+                            
+                                
+    <li class="subnavigation__list-item ">
+        <a href="cookbook/extracting-translatable-string-with-gettext/" class="subnavigation__link">Extracting translatable strings with Gettext</a>
+    </li>
+
+                            
+                        </ul>
+                    </li>
+                
             
                 
+                    <li class="subnavigation__list-item">
+                        <span class="subnavigation__headline">Migrating</span>
+                        <ul class="subnavigation__list">
+                            
+                                
     <li class="subnavigation__list-item ">
-        <a href="validators/file/extension/" class="subnavigation__link">Extension</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/files-size/" class="subnavigation__link">FilesSize</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/hash/" class="subnavigation__link">Hash</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/image-size/" class="subnavigation__link">ImageSize</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/is-compressed/" class="subnavigation__link">IsCompressed</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/is-image/" class="subnavigation__link">IsImage</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/md5/" class="subnavigation__link">Md5</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/mime-type/" class="subnavigation__link">MimeType</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/not-exists/" class="subnavigation__link">NotExists</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/sha1/" class="subnavigation__link">Sha1</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/size/" class="subnavigation__link">Size</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/upload/" class="subnavigation__link">Upload</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/upload-file/" class="subnavigation__link">UploadFile</a>
-    </li>
-
-            
-                
-    <li class="subnavigation__list-item ">
-        <a href="validators/file/word-count/" class="subnavigation__link">WordCount</a>
-    </li>
-
-            
-        </ul>
+        <a href="migration/migration-to-v2.4/" class="subnavigation__link">Migration to v2.4</a>
     </li>
 
                             
@@ -957,6 +796,15 @@
                     <li class="support__list-item">
                         <a href="https://twitter.com/zfdevteam" class="support__link" title="Twitter"><i class="fa fa-twitter"></i></a>
                     </li>
+                    <li class="support__list-item">
+                        <a href="https://tinyletter.com/mwopzend" class="support__link" title="Newsletter"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li class="support__list-item">
+                        <a href="https://framework.zend.com/blog/feed-rss.xml" class="support__link" title="Blog feed"><i class="fa fa-rss"></i></a>
+                    </li>
+                    <li class="support__list-item">
+                        <a href="https://framework.zend.com/security/feed" class="support__link" title="Security feed"><i class="fa fa-rss-square"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -965,11 +813,10 @@
 
     <script>
         var base_url = '.',
-            siteName = 'zend-validator';
+            siteName = 'zend-i18n';
     </script>
     <script src="./js/scripts.js"></script>
-        <script src="./search/require.js"></script>
-        <script src="./search/search.js"></script>
+
 
     
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
@@ -1007,6 +854,6 @@
 </html>
 
 <!--
-MkDocs version : 0.17.2
-Build Date UTC : 2018-05-25 04:02:56
+MkDocs version : 1.0.4
+Build Date UTC : 2019-03-01 09:57:28
 -->
